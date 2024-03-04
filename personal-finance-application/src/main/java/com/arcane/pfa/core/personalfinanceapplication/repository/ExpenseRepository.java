@@ -37,6 +37,6 @@ public interface ExpenseRepository extends JpaRepository<Expense, Long>{
 	
 	
 	//all upcoming budget alerts for a user based on their current spending rate.
-	@Query("SELECT COALESCE(SUM(e.amount), 0) FROM Expense e WHERE e.user.id = :userId AND e.budget.id = :budgetId")
-    double getTotalSpentForBudget(@Param("userId") long userId, @Param("budgetId") long budgetId);
+//	@Query("SELECT COALESCE(SUM(e.amount), 0) FROM Expense e WHERE e.user.id = :userId AND e.budget.id = :budgetId")
+//    double getTotalSpentForBudget(@Param("userId") long userId, @Param("budgetId") long budgetId);
 }

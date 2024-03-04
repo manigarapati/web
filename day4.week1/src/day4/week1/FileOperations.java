@@ -106,8 +106,8 @@ public class FileOperations {
 					f.br.close();
 					System.out.println("reader closed successfully !!");
 				}
-				//Files.delete(Paths.get("D:\\output.txt"));
-				//System.out.println("File deleted ");
+				Files.delete(Paths.get("D:\\output.txt"));
+				System.out.println("File deleted ");
 			} catch (IOException e) {
 				System.err.println(e.getMessage());
 			}

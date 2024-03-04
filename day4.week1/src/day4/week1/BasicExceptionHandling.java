@@ -14,6 +14,7 @@ public class BasicExceptionHandling {
 		try {
 			float result = num1/num2;
 			System.out.println(result);
+			throw new ArithmeticException("Arithematicexception");
 		}
 		catch(ArithmeticException e){
 			System.err.println("Second number should not be zero !!!");
