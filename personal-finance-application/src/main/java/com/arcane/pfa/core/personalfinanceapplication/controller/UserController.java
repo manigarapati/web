@@ -70,6 +70,8 @@ public class UserController {
 		return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid Email or Password");
     }
 	
+	
+	
 	 @GetMapping("/inactive")
 	    public ResponseEntity<List<User>> getInactiveUsers() {
 	        List<User> inactiveUsers = userService.findInactiveUsers();
